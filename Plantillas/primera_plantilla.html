@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIJONKEKE</title>
+</head>
+    <body>
+        <h1 style="color: blueviolet;">
+            Esta es mi primera plantilla
+        </h1>
+        <h2>
+            <strong>Los temas son: </strong>
+        </h2>
+        <p>
+            <ul>
+                {% if Temas %}
+                    {% for tem in Temas%}
+                        <li>
+                            {{tem}}
+                        </li>
+                    {% endfor %}
+
+                    {% else %}
+                        <p>Sin temas que mostrar</p>
+                
+                {% endif %}
+            </ul>
+            el nombre mio es: {{nombre_persona.upper}}
+        </p>
+    </body>
+</html>
