@@ -10,12 +10,12 @@ class persona():
 
 def saludo(request):
     p1=persona("kevin","xcar")
-    temas_curso=["Django","Plantillas","Modelos","Formularios","Vistas","Despliegue"]
-    doc_externo=open("C:/Users/Prueba/Desktop/Poyecto restaurante2/Proyecto1/Proyecto1/Plantillas/primera_plantilla.html")
-    planti=Template(doc_externo.read())
-    doc_externo.close()
-    cx=Context({"Temas":temas_curso,"nombre_persona":p1.nombre})
-    documento=planti.render(cx)
+    #temas_curso=["Django","Plantillas","Modelos","Formularios","Vistas","Despliegue"]
+    #doc_externo=open("C:/Users/Prueba/Desktop/Poyecto restaurante2/Proyecto1/Proyecto1/Plantillas/primera_plantilla.html")
+    #planti=Template(doc_externo.read())
+    #doc_externo.close()
+    #cx=Context({"Temas":temas_curso,"nombre_persona":p1.nombre})
+    #documento=planti.render(cx)
 
     return HttpResponse(documento)
 
