@@ -54,9 +54,9 @@ ROOT_URLCONF = 'Proyecto1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\Users\Prueba\Desktop\Poyecto restaurante2\Proyecto1\Proyecto1\Restaurante'],
+        'DIRS': ['C:/Users/Prueba/Desktop/Poyecto restaurante2/Proyecto1/Proyecto1/Restaurante'],
         'APP_DIRS': True,
-        'OPTIONS': {
+        'OPTIONS':{
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
