@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 import datetime
 from django.template import Template,Context
+from django.shortcuts import render
 
 class persona():
     def __init__(self,nombre,apellido):
@@ -17,7 +18,7 @@ def saludo(request):
     #cx=Context({"Temas":temas_curso,"nombre_persona":p1.nombre})
     #documento=planti.render(cx)
 
-    return HttpResponse(documento)
+    return render(request,"doc_base.html",{"nombre":p1.nombre,"apellido":p1.apellido})
 
 def despedida(request):
     return HttpResponse("Gracias por todo") 
